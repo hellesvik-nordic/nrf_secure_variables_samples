@@ -5,15 +5,19 @@ If built for boards with postfix "_ns", such as nrf9160dk_nrf9160_ns, it will in
 SPM is configured to set PWM0 as Non-Secure, and PWM0 as Non-Secure.
 
 So if the project is built for nrf9160dk_nrf9160, it will run fine:
+
 ```
 west build -p -b nrf9160dk_nrf9160
+
 west flash
 ```
 
 However, if the project is built for nrf9160dk_nrf9160_ns, it will crash with a bus fault due to PWM1 being Secure, and not accessible from the main function. 
 The application is in the Non-Secure domain.
+
 ```
 west build -p -b nrf9160dk_nrf9160_ns
+
 west flash
 ```
 
