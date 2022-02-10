@@ -1,11 +1,13 @@
-Hello World
+Non-Secure vs Secure PWM
 ###########
+This sample will enable PWM driver PWM0 and PWM1.
+If built for boards with postfix "_ns", such as nrf9160dk_nrf9160_ns, it will include Secure Partition Manager, see [SPM](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.8.0/nrf/libraries/others/spm.html) for more information on this.
+SPM is configured to set PWM0 as Secure, and PWM1 as non-secure.
 
-Overview
+
+Configuration
 ********
 
-A simple sample that can be used with any :ref:`supported board <boards>` and
-prints "Hello World" to the console.
 
 Building and Running
 ********************

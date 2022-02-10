@@ -1,0 +1,4 @@
+&pwm1 {
+		status = "okay";
+		ch0-pin = < 0x3 >;
+};
