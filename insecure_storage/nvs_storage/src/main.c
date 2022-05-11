@@ -1,5 +1,4 @@
 #include <zephyr.h>
-#include <sys/printk.h>
 #include <device.h>
 #include <fs/nvs.h>
 #include <storage/flash_map.h>
