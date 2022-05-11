@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2012-2014 Wind River Systems, Inc.
- *
- * SPDX-License-Identifier: Apache-2.0
- */
-
 #include <zephyr.h>
 #include <sys/printk.h>
 #include <device.h>
@@ -11,7 +5,6 @@
 #include <storage/flash_map.h>
 #include <string.h>
 
-//Label of which DeviceTree storage to use. 
 #define DEVICE_LABEL storage
 #define KEY_ID 1
 #define KEY_SIZE 12
@@ -27,18 +20,14 @@ void main(void)
     ssize_t ret = 0;
     const struct device *nvs_dev;
     uint8_t key[KEY_SIZE];
-
     printk("Start of NVS simple sample\n");
-
 
     nvs_dev = FLASH_AREA_DEVICE(DEVICE_LABEL);
     if(!device_is_ready(nvs_dev)){
         printk("Error: Device not ready\n");
         return; 
     }
-
     nvs_init(&nvs, nvs_dev->name);
-
 
     ret = nvs_read(&nvs, KEY_ID, key, sizeof(key));
     if(ret > 0){ // Key already in NVS
