@@ -19,7 +19,9 @@ void main(void)
     ssize_t ret = 0;
     const struct device *nvs_dev;
     uint8_t key[KEY_SIZE];
-    printk("Start of NVS simple sample\n");
+    printk("-----------------\n");
+    printk("NVS SIMPLE SAMPLE\n");
+    printk("-----------------\n");
 
     nvs_dev = FLASH_AREA_DEVICE(DEVICE_LABEL);
     if(!device_is_ready(nvs_dev)){
@@ -37,5 +39,4 @@ void main(void)
         printk("Write key to NVS complete\n");
         nvs_write(&nvs, KEY_ID, key, sizeof(key));
     }
-    printk("End of NVS simple sample\n");
 }
