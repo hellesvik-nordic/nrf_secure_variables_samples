@@ -7,7 +7,7 @@
 #include <fprotect.h>
 
 // Toggle these define to choose if fprotect shall protect the NVS flash region from read and/or write
-#define WRITE_AND_READ_PROTECT 0
+#define WRITE_AND_READ_PROTECT 1
 #define WRITE_PROTECT 1
 
 // The following code is copied from the insecure_storage/nvs_storage sample --------------------------------
