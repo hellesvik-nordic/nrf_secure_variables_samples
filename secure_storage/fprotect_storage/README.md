@@ -1,9 +1,9 @@
 # Simple fprotect Sample
-**DISCLAIMER: This sample is unofficial. See the [Hardware flash write protection API](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/others/fprotect.html) for official documentation.**
+**DISCLAIMER: This sample is unofficial. See the [Hardware flash write protection driver](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/others/fprotect.html) for official documentation.**
 
 This sample is intended as a quick reference for the TODO(put link here) blogpost.
 
-It uses the [fprotect API](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.9.1/nrf/libraries/others/fprotect.html) to set read protection for the flash area used for NVS.
+It uses the [fprotect driver](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.9.1/nrf/libraries/others/fprotect.html) to set read protection for the flash area used for NVS.
 Then the code from the [Simple NVS Sample](../../insecure_storage/nvs_storage) is used to attempt a write or read from flash.
 If the flash is protected by fprotect, a bussfault will occur when NVS tries to access the flash.
 
@@ -15,5 +15,6 @@ Observe how the sample behaves after erase and reset from a serial terminal.
 
 ```
 west build -b <board_name>
+west flash
 nrfjprog --reset
 ```
