@@ -1,0 +1,3 @@
+sample:
+  description: Simple sample showing how to use the one time programmable memory of nRF5340 and nRF9160
+  name: otp storage sample
