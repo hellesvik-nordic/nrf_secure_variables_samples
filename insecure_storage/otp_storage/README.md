@@ -19,7 +19,7 @@ west flash --erase
 ```
 
 ## Documentation
-[nRF5340 Product Specification on OTP](https://infocenter.nordicsemi.com/topic/ps_nrf5340/kmu.html?cp=3_0_0_6_16_3_0#kmu_otp)
-[nRF5340 Product Specification on UICR](https://infocenter.nordicsemi.com/topic/ps_nrf5340/chapters/uicr/doc/uicr.html?cp=3_0_0_4_3_2)
-[nRF9160 Product Specification on OTP](https://infocenter.nordicsemi.com/topic/ps_nrf9160/kmu.html?cp=2_0_0_5_7_3_0#kmu_otp)
-[nRF9160 Product Specification on UICR](https://infocenter.nordicsemi.com/topic/ps_nrf9160/uicr.html?cp=2_0_0_3_5)
+- [nRF5340 Product Specification on OTP](https://infocenter.nordicsemi.com/topic/ps_nrf5340/kmu.html?cp=3_0_0_6_16_3_0#kmu_otp)
+- [nRF5340 Product Specification on UICR](https://infocenter.nordicsemi.com/topic/ps_nrf5340/chapters/uicr/doc/uicr.html?cp=3_0_0_4_3_2)
+- [nRF9160 Product Specification on OTP](https://infocenter.nordicsemi.com/topic/ps_nrf9160/kmu.html?cp=2_0_0_5_7_3_0#kmu_otp)
+- [nRF9160 Product Specification on UICR](https://infocenter.nordicsemi.com/topic/ps_nrf9160/uicr.html?cp=2_0_0_3_5)
